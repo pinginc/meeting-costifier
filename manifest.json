@@ -1,0 +1,45 @@
+{
+  "name": "Meeting Costifier",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Quickly add a cost tag to your Google meeting signifying the value of meeting time. Encourage productive meetings",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Meeting Costifier",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "https://calendar.google.com/*",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://calendar.google.com/calendar/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://calendar.google.com/calendar/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": ["src/inject/icon.png"]
+}
