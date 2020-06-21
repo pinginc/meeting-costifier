@@ -1,6 +1,6 @@
 {
   "name": "Meeting Costifier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Quickly add a cost tag to your Google meeting signifying the value of meeting time. Encourage productive meetings",
   "icons": {

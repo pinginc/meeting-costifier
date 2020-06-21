@@ -1,6 +1,4 @@
-/**
- * Place your custom CSS styles here.
- **/
+/* These values were inspected from an existing google calendar button. */
 #meetingCost {
     display: inline-block;
     background-color: rgb(14, 114, 237);
