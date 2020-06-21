@@ -17,4 +17,4 @@ The cost calculation is currently #people * hours * $100.
 
 ## Screenshots
 
-![Image](screenshots/meeting_costifier.PNG)
+![Image](screenshots/meeting_costifier.png)
