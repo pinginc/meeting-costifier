@@ -4,7 +4,7 @@ Quickly add a cost tag to your Google meeting signifying the value of meeting ti
 
 ## Download
 
-You can download this extension in the Google Chrome store: https://chrome.google.com/webstore/detail/meeting-costifier
+You can download this extension in the Google Chrome store: https://chrome.google.com/webstore/detail/meeting-costifier/binhlcibajcpjcmnkagcommjdmealmno
 
 ## Parameters
 
