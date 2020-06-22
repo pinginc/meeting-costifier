@@ -74,8 +74,8 @@ function buttonClickEvent() {
 }
 
 function prependDescriptionTextWithMeetingCosts(descriptionInputElement, numberOfParticipants, costPerHour, durationInHours) {
-	var unroundedMeetingCost = numberOfParticipants * costPerHour * durationInHours;
-	var roundedMeetingCost = Math.ceil(unroundedMeetingCost/100)*100
+	const unroundedMeetingCost = numberOfParticipants * costPerHour * durationInHours;
+	const roundedMeetingCost = Math.ceil(unroundedMeetingCost/100)*100
 	descriptionInputElement.innerHTML = `[Meeting cost: $${roundedMeetingCost}] - ${descriptionInputElement.innerHTML}`;
 }
 
