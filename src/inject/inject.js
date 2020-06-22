@@ -74,7 +74,9 @@ function buttonClickEvent() {
 }
 
 function prependDescriptionTextWithMeetingCosts(descriptionInputElement, numberOfParticipants, costPerHour, durationInHours) {
-	descriptionInputElement.innerHTML = `[Meeting cost: $${numberOfParticipants * costPerHour * durationInHours}] - ${descriptionInputElement.innerHTML}`;
+	const unroundedMeetingCost = numberOfParticipants * costPerHour * durationInHours;
+	const roundedMeetingCost = Math.ceil(unroundedMeetingCost/100)*100
+	descriptionInputElement.innerHTML = `[Meeting cost: $${roundedMeetingCost}] - ${descriptionInputElement.innerHTML}`;
 }
 
 function removePlaceholderDescriptionText() {
@@ -121,4 +123,3 @@ function parseDomStartDate() {
 	const startDate = Date.parse(startTimeText);
 	return startDate;
 }
-
